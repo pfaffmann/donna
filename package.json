@@ -1,0 +1,32 @@
+{
+  "name": "donna",
+  "version": "1.0.0",
+  "description": "A nodjs app to create donation receipts.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfaffmann/donna.git"
+  },
+  "author": "Christoph Pfaffmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pfaffmann/donna/issues"
+  },
+  "homepage": "https://github.com/pfaffmann/donna#readme",
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/nodemailer": "^6.4.17",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "nodemailer": "^6.10.0",
+    "pdf-lib": "^1.17.1"
+  }
+}

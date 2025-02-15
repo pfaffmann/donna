@@ -1,0 +1,10 @@
+services:
+  donna:
+    build:
+      context: .
+      args:
+        DONNA_PDF_PATH: /app/publish/ # Set build argument here
+    volumes:
+      - ./publish:/app/publish
+      - /app/node_modules
+    command: npm run start
